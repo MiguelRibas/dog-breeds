@@ -1,0 +1,107 @@
+[
+    {
+        "icon": "golden",
+        "breed": "Golden Retriever",
+        "group": "Retriever",
+        "temperament": "Pranksters",
+        "temperamentColor": "green",
+        "details": {
+            "breed": "Golden Retrivier",
+            "aboutBreed": "Além de serem utilizados muitas vezes como cachorros de terapia e cães-guia para cegos e pessoas com deficiências motoras, o Golden Retriever é um cachorro obediente. Apesar de ser muito ativo, ele consegue ficar bem em alguns momentos em que é preciso ter calmaria.",
+            "personality": [
+                "Brincalhao",
+                "Ativo",
+                "Amoroso",
+                "Leal",
+                "Obediente",
+                "Inteligente"
+            ],
+            "likeChilds": 5,
+            "energyLevel": 4
+        }
+    },
+    {
+        "icon": "french_bulldog",
+        "breed": "French Bulldog",
+        "group": "Bulldog",
+        "temperament": "Pranksters",
+        "temperamentColor": "green",
+        "details": {
+            "breed": "Golden Retrivier",
+            "aboutBreed": "Além de serem utilizados muitas vezes como cachorros de terapia e cães-guia para cegos e pessoas com deficiências motoras, o Golden Retriever é um cachorro obediente. Apesar de ser muito ativo, ele consegue ficar bem em alguns momentos em que é preciso ter calmaria.",
+            "personality": [
+                "Brincalhao",
+                "Ativo",
+                "Amoroso",
+                "Leal",
+                "Obediente",
+                "Inteligente"
+            ],
+            "likeChilds": 5,
+            "energyLevel": 4
+        }
+    },
+    {
+        "icon": "beagle",
+        "breed": "Beagle",
+        "group": "Rastreador",
+        "temperament": "Sociable",
+        "temperamentColor": "blue",
+        "details": {
+            "breed": "Golden Retrivier",
+            "aboutBreed": "Além de serem utilizados muitas vezes como cachorros de terapia e cães-guia para cegos e pessoas com deficiências motoras, o Golden Retriever é um cachorro obediente. Apesar de ser muito ativo, ele consegue ficar bem em alguns momentos em que é preciso ter calmaria.",
+            "personality": [
+                "Brincalhao",
+                "Ativo",
+                "Amoroso",
+                "Leal",
+                "Obediente",
+                "Inteligente"
+            ],
+            "likeChilds": 5,
+            "energyLevel": 4
+        }
+    },
+    {
+        "icon": "bull_breed",
+        "breed": "Bull Terrier",
+        "group": "Terrier - Bull",
+        "temperament": "Energy",
+        "temperamentColor": "red",
+        "details": {
+            "breed": "Golden Retrivier",
+            "aboutBreed": "Além de serem utilizados muitas vezes como cachorros de terapia e cães-guia para cegos e pessoas com deficiências motoras, o Golden Retriever é um cachorro obediente. Apesar de ser muito ativo, ele consegue ficar bem em alguns momentos em que é preciso ter calmaria.",
+            "personality": [
+                "Brincalhao",
+                "Ativo",
+                "Amoroso",
+                "Leal",
+                "Obediente",
+                "Inteligente"
+            ],
+            "likeChilds": 5,
+            "energyLevel": 4
+        }
+    },
+    {
+        "icon": "border_collie",
+        "breed": "Border Collie",
+        "group": "Pastor",
+        "temperament": "Energy",
+        "temperamentColor": "red",
+        "details": {
+            "breed": "Golden Retrivier",
+            "aboutBreed": "Além de serem utilizados muitas vezes como cachorros de terapia e cães-guia para cegos e pessoas com deficiências motoras, o Golden Retriever é um cachorro obediente. Apesar de ser muito ativo, ele consegue ficar bem em alguns momentos em que é preciso ter calmaria.",
+            "personality": [
+                "Brincalhao",
+                "Ativo",
+                "Amoroso",
+                "Leal",
+                "Obediente",
+                "Inteligente"
+            ],
+            "likeChilds": 5,
+            "energyLevel": 4
+        }
+    }
+]
