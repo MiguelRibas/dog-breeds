@@ -10,16 +10,10 @@ import SwiftUI
 struct ListCard: View {
     let icon: String
     let breed: String
-    let age: String
-    let temperament: String
-    let temperamentColor: Color
     
-    init(icon: String, breed: String, age: String, temperament: String, temperamentColor: Color) {
+    init(icon: String, breed: String) {
         self.icon = icon
         self.breed = breed
-        self.age = age
-        self.temperament = temperament
-        self.temperamentColor = temperamentColor
     }
     
     var body: some View {
@@ -32,17 +26,6 @@ struct ListCard: View {
                 Text(breed)
                     .font(.system(size: 20, weight: .medium))
                     .foregroundColor(.black)
-                Text("Grupo: \(age)")
-                    .font(.system(size: 15, weight: .regular))
-                    .foregroundColor(Color(white: 0.3))
-                HStack {
-                    Text("Temperamento:")
-                        .font(.system(size: 15, weight: .regular))
-                        .foregroundColor(Color(white: 0.3))
-                    Text(temperament)
-                        .font(.system(size: 15, weight: .semibold))
-                        .foregroundColor(temperamentColor)
-                }
             }
             Spacer()
             NavigationLink(destination: DetailBreedsView()) {
@@ -71,7 +54,7 @@ struct BreedListComponent: View {
         ScrollView {
             VStack(spacing: 18) {
                 ForEach(model, id: \.breed) { item in
-                    ListCard(icon: item.icon, breed: item.breed, age: item.group, temperament: item.temperament, temperamentColor: colorFromString(item.temperamentColor))
+                    ListCard(icon: item.icon, breed: item.breed)
                 }
             }
             .padding(.horizontal, 16)
@@ -81,35 +64,20 @@ struct BreedListComponent: View {
     }
 }
 
-#Preview {
-    BreedListComponent(model: [DogBreedsModel(icon: "golden",
-                              breed: "Golden Retriever",
-                              group: "Retriever",
-                              temperament: "Pranksters",
-                              temperamentColor: "green"),
-                   
-                   DogBreedsModel(icon: "french_bulldog",
-                              breed: "French Bulldog",
-                              group: "Bulldog",
-                              temperament: "Pranksters",
-                              temperamentColor: "green"),
-    
-                   DogBreedsModel(icon: "beagle",
-                              breed: "Beagle",
-                              group: "Rastreador",
-                              temperament: "Sociable",
-                              temperamentColor: "blue"),
-    
-                   DogBreedsModel(icon: "bull_breed",
-                              breed: "Bull Terrier",
-                              group: "Terrier - Bull",
-                              temperament: "Energy",
-                              temperamentColor: "red"),
-                   
-                   DogBreedsModel(icon: "border_collie",
-                              breed: "Border Collie",
-                              group: "Pastor",
-                              temperament: "Energy",
-                              temperamentColor: "red")
-    ])
-}
+//#Preview {
+//    BreedListComponent(model: [DogBreedsModel(icon: "golden",
+//                                              breed: "Golden Retriever", details: ""),
+//                   
+//                   DogBreedsModel(icon: "french_bulldog",
+//                                  breed: "French Bulldog", details: ""),
+//    
+//                   DogBreedsModel(icon: "beagle",
+//                                  breed: "Beagle", details: ""),
+//    
+//                   DogBreedsModel(icon: "bull_breed",
+//                                  breed: "Bull Terrier", details: ""),
+//                   
+//                   DogBreedsModel(icon: "border_collie",
+//                                  breed: "Border Collie", details: "")
+//    ])
+//}

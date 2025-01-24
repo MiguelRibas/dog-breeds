@@ -1,5 +1,5 @@
 //
-//  DogBreedsModel.swift
+//  BreedsResponse.swift
 //  dog-breeds
 //
 //  Created by miguelribas on 20/01/25.
@@ -39,29 +39,5 @@ struct PaginationLinks: Codable {
         case current
         case next
         case last
-    }
-}
-
-struct DogBreedsModel: Codable {
-    let icon: String
-    let breed: String
-    let group: String
-    let temperament: String
-    let temperamentColor: String
-    
-    func loadDogBreeds() -> [DogBreedsModel] {
-        guard let url = Bundle.main.url(forResource: "dogBreeds", withExtension: "json") else {
-            print("Arquivo JSON não encontrado.")
-            return []
-        }
-
-        do {
-            let data = try Data(contentsOf: url)
-            let dogBreeds = try JSONDecoder().decode([DogBreedsModel].self, from: data)
-            return dogBreeds
-        } catch {
-            print("Erro ao carregar JSON: \(error)")
-            return []
-        }
     }
 }
